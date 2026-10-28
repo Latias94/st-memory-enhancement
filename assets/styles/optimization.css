@@ -155,6 +155,14 @@
     .memory-optimizer-connection { flex-wrap: wrap; gap: 10px; }
     .memory-optimizer-connection > .memory-optimizer-link { margin-left: 24px; }
     .memory-optimizer-footer-note, .memory-optimizer-actions { width: 100%; }
+    .memory-optimizer-footer {
+        position: sticky;
+        bottom: 0;
+        z-index: 1;
+        padding: 12px 0 8px;
+        background: var(--SmartThemeBlurTintColor, #1b1b1b);
+        backdrop-filter: blur(8px);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
