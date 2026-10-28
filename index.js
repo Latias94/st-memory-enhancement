@@ -15,6 +15,7 @@ import applicationFunctionManager from "./services/appFuncManager.js"
 import {SheetBase} from "./core/table/base.js";
 import { Cell } from "./core/table/cell.js";
 import { initExternalDataAdapter } from './external-data-adapter.js';
+import { openTableOptimization } from './scripts/runtime/tableOptimization.js';
 
 
 console.log("______________________记忆插件：开始加载______________________")
@@ -1031,6 +1032,7 @@ jQuery(async () => {
     }
 
     // 设置表格编辑按钮
+    $(document).on('click', '#table_optimize_button', () => openTableOptimization());
     console.log("设置表格编辑按钮", applicationFunctionManager.doNavbarIconClick)
     if (isDrawerNewVersion()) {
         $('#table_database_settings_drawer .drawer-toggle').on('click', applicationFunctionManager.doNavbarIconClick);

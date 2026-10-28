@@ -1,3 +1,5 @@
+@import url('./optimization.css');
+
 /* 以下为原有样式，不修改 */
 .--SmartThemeBodyColor {}               /* 主题正文颜色 */
 .--SmartThemeEmColor {}                 /* 强调颜色 */

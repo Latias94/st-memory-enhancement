@@ -316,6 +316,7 @@ export const defaultSettings = await switchLanguage('__defaultSettings__', {
     rebuild_default_message_template: '',
     lastSelectedTemplate: "rebuild_base", // For full rebuild templates (used by rebuildTableActions)
     rebuild_message_template_list:{},
+    optimization_options: {},
     additionalPrompt: "",
     /**
      * ===========================
